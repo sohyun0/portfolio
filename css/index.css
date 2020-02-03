@@ -1,0 +1,890 @@
+@charset "utf-8";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "NanumSquareRound", sans-serif;
+}
+/*공통영역 코딩 필요한부분 불러쓰기*/
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clear1 {
+  display: block;
+}
+.clear2 {
+  display: none;
+}
+.title {
+  padding-top: 30px;
+  font-family: "Montserrat Subrayada", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.line {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #ccc;
+}
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/*320px~480px 모바일 세로기준*/
+/*1.헤더영역---------------------------------------------------*/
+/*높은 해상도에서만 보이게하기*/
+header img[alt="메인배경이미지"] {
+  display: none;
+}
+header img[alt="모바일메인배경이미지"] {
+  width: 100%;
+  position: relative;
+}
+/*1.헤더영역---------------------------------------------------*/
+
+/*2.gnb영역---------------------------------------------------*/
+/*모바일 gnb메뉴----------------------*/
+/*인풋버튼 가리기*/
+article .menu_toggle_btn {
+  z-index: 1000;
+}
+article .menu_toggle_btn input[id="menuicon"] {
+  display: none;
+}
+/*액자역할*/
+article .menu_toggle_btn input[id="menuicon"] + label {
+  display: block;
+  width: 24px;
+  height: 14px;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+}
+/*햄버거메뉴 만들기*/
+article .menu_toggle_btn input[id="menuicon"] + label span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  z-index: 100;
+  transition: all 0.3s;
+}
+/*햄버거메뉴 배치*/
+article .menu_toggle_btn input[id="menuicon"] + label > span:nth-child(1) {
+  top: 0;
+}
+article .menu_toggle_btn input[id="menuicon"] + label > span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+article .menu_toggle_btn input[id="menuicon"] + label > span:nth-child(3) {
+  bottom: 0;
+}
+/*클릭시 햄버거메뉴 변환*/
+article
+  .menu_toggle_btn
+  input[id="menuicon"]:checked
+  + label
+  > span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+article
+  .menu_toggle_btn
+  input[id="menuicon"]:checked
+  + label
+  > span:nth-child(2) {
+  opacity: 0;
+}
+article
+  .menu_toggle_btn
+  input[id="menuicon"]:checked
+  + label
+  > span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+article .menu_toggle_btn input[id="menuicon"]:checked + label + nav {
+  left: 0px;
+}
+
+/*기본화면 gnb메뉴----------------------*/
+
+/*side gnb 메뉴*/
+article .menu_toggle_btn .gnb {
+  width: 240px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -240px;
+  transition: all 0.3s;
+  box-shadow: 0 0 5px #000;
+  background: #01172c;
+  z-index: 99;
+}
+article .menu_toggle_btn .gnb h1 {
+  padding-top: 100px;
+  padding-left: 30px;
+  color: #fff;
+}
+article .menu_toggle_btn .gnb a img {
+  float: left;
+}
+article .menu_toggle_btn .gnb a h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  line-height: 1.2;
+  float: left;
+  font-weight: bold;
+  font-size: 1rem;
+}
+article .menu_toggle_btn .gnb_list {
+  margin-top: 30px;
+  padding-left: 50px;
+}
+article .menu_toggle_btn .gnb_list li {
+  font-size: 1.125rem;
+  padding-top: 50px;
+  color: #fff;
+}
+article .menu_toggle_btn .gnb_list li a i {
+  margin-right: 20px;
+  font-size: 1.125rem;
+}
+
+/*2.gnb영역---------------------------------------------------*/
+
+/*3.aboutme영역---------------------------------------------------*/
+
+/*3-1.profile영역----------------------*/
+.aboutme {
+  padding: 30px 0;
+  font-size: 0.875rem;
+}
+.aboutme h1 {
+  color: #000;
+  letter-spacing: -1px;
+}
+.aboutme .profile_info_first {
+  width: 80%;
+  margin: 0 auto;
+}
+.aboutme .profile_info_first img[alt="프로필사진"] {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+}
+.aboutme .profile_info_first p {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  line-height: 2;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.aboutme .profile_info_first p span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+/*3-1.profile영역----------------------*/
+
+/*3-2.profile2영역----------------------*/
+.aboutme .profile_info_secend {
+  padding-top: 50px;
+}
+.aboutme .profile_info_secend .fa-quote-left {
+  font-size: 1rem;
+  color: #01172c;
+}
+.aboutme .profile_info_secend .fa-quote-left span {
+  color: #000;
+}
+.aboutme .profile_info_secend {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+.aboutme .profile_info_secend div {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.aboutme .profile_info_secend div i {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.aboutme .profile_info_secend ul li {
+  margin-bottom: 15px;
+}
+
+/*3-2.profile2영역----------------------*/
+/*3.aboutme영역---------------------------------------------------*/
+/*4.portfolio영역---------------------------------------------------*/
+/*4-1 상단메뉴버튼영역----------------------*/
+.portfolio {
+  background-color: #01172c;
+  padding-bottom: 30px;
+}
+.portfolio .tab_menu {
+  text-align: center;
+  margin-top: 20px;
+}
+.portfolio .tab_menu a {
+  margin: 0 auto;
+  display: block;
+  padding: 10px 15px;
+  background-color: #bfe5e3;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.portfolio .transform_icon {
+  margin-top: 20px;
+  text-align: center;
+}
+.portfolio .transform_icon a {
+  width: 40%;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #bfe5e3;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+/*4-1 상단메뉴버튼영역----------------------*/
+/*4-2 그리드포트폴리오영역----------------------*/
+.portfolio .grid_portfolio {
+  width: 90%;
+  margin: 5% auto;
+  margin-top: 50px;
+}
+
+.portfolio .grid_portfolio .all {
+  width: 100%;
+  margin-top: 30px;
+}
+.portfolio .grid_portfolio .all .item a .project_text {
+  display: none;
+}
+.portfolio .grid_portfolio .all .item a img {
+  width: 100%;
+}
+.portfolio .grid_portfolio .all .item p {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+.portfolio .grid_portfolio .all .item .site_btn {
+}
+.portfolio .grid_portfolio .all .item .site_btn a {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 1% 1.5%;
+  font-size: 0.75rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bfe5e3;
+}
+/*4-2 그리드포트폴리오영역----------------------*/
+
+/*4.portfolio영역---------------------------------------------------*/
+/*5.contact영역---------------------------------------------------*/
+.contact {
+  background-image: url(../images/contact_mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.contact > h1 {
+  padding-top: 50px;
+  font-family: "Montserrat Subrayada", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+}
+/*5-1폼영역----------------------------*/
+.contact .form_box {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+}
+.contact .form_box ul {
+  margin-top: 30px;
+}
+.contact .form_box ul li label {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  font-size: 0.875rem;
+  color: #fff;
+}
+.contact .form_box ul li input,
+.contact .form_box ul li textarea {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 20px;
+  font-size: 1rem;
+  border: 0;
+  border-bottom: 1px solid #c4c4c4;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+.contact .form_box ul li textarea {
+  height: 155px;
+}
+.contact .btn button {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #b0bfe1;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.contact .form_box p {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.contact .form_box p:last-child {
+  color: #b7b7b7;
+}
+/*5-1폼영역---------------------------*/
+/*5-2정보영역----------------------------*/
+.contact_box {
+  margin-top: 30px;
+  text-align: center;
+}
+.contact_box .info_list li {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.contact_box .info_list li i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.contact_box .info_list {
+  color: #282828;
+}
+.contact_box .sns_icon {
+  width: 90%;
+  margin: 5%;
+  font-size: 1.875rem;
+}
+.contact_box .sns_icon li {
+  float: left;
+  width: 26.66666666666667%;
+  padding: 10px 0;
+  margin-left: 5%;
+  background: #3b5998;
+  border-radius: 20px;
+  color: #fff;
+}
+.contact_box .sns_icon li:nth-child(2) {
+  background: -webkit-linear-gradient(#505bd1, #b8348a, #fc9a37);
+  background: -o-linear-gradient(#505bd1, #b8348a, #fc9a37);
+  background: -moz-linear-gradient(#505bd1, #b8348a, #fc9a37);
+  background: linear-gradient(to bottom, #505bd1, #b8348a, #fc9a37);
+}
+.contact_box .sns_icon li:nth-child(3) {
+  color: #3c1e1e;
+  background: #faff00;
+}
+/*5-2정보영역----------------------------*/
+/*6.aside 영역--------------------------------------------*/
+.scroll_show .top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+.scroll_show .top i {
+  font-size: 1.5rem;
+  color: #8ccbf8;
+}
+/*6.aside 영역--------------------------------------------*/
+/*7.footer 영역--------------------------------------------*/
+footer p {
+  text-align: center;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+}
+footer p:last-child {
+  padding-top: 0;
+}
+/*7.footer 영역--------------------------------------------*/
+
+/*Media Query---------------------------------------------*/
+/*가로모드 공통*/
+@media screen and (orientation: landscape) {
+  /*1.header*/
+  /*1.header*/
+
+  /*2.article*/
+  article .menu_toggle_btn input[id="menuicon"] + label {
+    display: none;
+  }
+  /*top -fixed gnb메뉴*/
+  article .menu_toggle_btn .gnb {
+    display: block;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    background-color: #01172c;
+  }
+  article .menu_toggle_btn .gnb h1 {
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  article .menu_toggle_btn .gnb h1 a h2 {
+    display: none;
+  }
+  article .menu_toggle_btn .gnb .gnb_list {
+    margin-top: 0px;
+    padding-left: 0px;
+    float: right;
+    margin-right: 20px;
+    line-height: 80px;
+  }
+  article .menu_toggle_btn .gnb .gnb_list li {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-top: 0px;
+    margin-left: 15px;
+  }
+  article .menu_toggle_btn .gnb .gnb_list li .fa-shapes {
+    display: none;
+  }
+  /*2.article*/
+}
+
+/*480px~: 모바일 or 저해상도 태블릿*/
+@media screen and (min-width: 480px) {
+  /*3.aboutme영역---------------------------------------------------*/
+  /*3-2.profile2영역----------------------*/
+  .clear1 {
+    display: none;
+  }
+  .clear2 {
+    display: block;
+  }
+  .aboutme .profile_info_first p {
+    font-size: 1.125em;
+  }
+  .aboutme .profile_info_secend .fa-quote-left {
+    font-size: 1rem;
+  }
+  .aboutme .profile_info_secend {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .aboutme .profile_info_secend div {
+    width: 50%;
+  }
+  /*3-2.profile2영역----------------------*/
+  /*3.aboutme영역---------------------------------------------------*/
+  /*4.portfolio영역-----------------------------------*/
+  .portfolio .tab_menu a {
+    margin: 0 auto;
+    display: inline-block;
+    width: 30%;
+    border-radius: 5px;
+  }
+  .portfolio .grid_portfolio .all .item p {
+    font-size: 1.25rem;
+  }
+  .portfolio .grid_portfolio .all .item a .project_text {
+    font-size: 1.125rem;
+  }
+  /*4.portfolio영역-----------------------------------*/
+}
+
+/*767px~: 태블릿 세로*/
+@media screen and (min-width: 767px) {
+  .title {
+    font-size: 2rem;
+  }
+  /*1.header영역*/
+  header img[alt="메인배경이미지"] {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  header img[alt="모바일메인배경이미지"] {
+    display: none;
+  }
+  /*1.header영역*/
+  /*2.article영역-----------------------------------*/
+  article .menu_toggle_btn inzput[id="menuicon"] + label {
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 100;
+  }
+  /*2.article영역-----------------------------------*/
+  .aboutme .profile_info_first {
+    width: 90%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutme .profile_info_first img[alt="프로필사진"] {
+    width: 35%;
+    margin: 0;
+    margin-top: 50px;
+  }
+  .aboutme .profile_info_first p {
+    width: 65%;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .aboutme .profile_info_secend {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .aboutme .profile_info_secend div {
+    width: auto;
+  }
+  /*3-1.profile영역----------------------*/
+  /*3.profile영역------------------------------------*/
+  /*4.portfolio영역-----------------------------------*/
+  .portfolio .grid_portfolio .all {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+    margin-bottom: 50px;
+  }
+  .portfolio .grid_portfolio .all .item a .project_text {
+    font-size: 1rem;
+  }
+  /*4.portfolio영역*/
+  /*5.contact영역*/
+  .contact_box .info_list li {
+    font-size: 1.125rem;
+  }
+  /*5.contact영역*/
+}
+
+/*767px~: 태블릿 가로*/
+@media screen and (min-width: 767px) and (orientation: landscape) {
+  .title {
+    font-size: 2rem;
+  }
+  header img[alt="메인배경이미지"] {
+    display: block;
+    width: 100%;
+  }
+  header img[alt="모바일메인배경이미지"] {
+    display: none;
+  }
+  article .menu_toggle_btn .gnb {
+    padding: 0 40px;
+  }
+  article .menu_toggle_btn .gnb h1 a h2 {
+    display: block;
+  }
+  .contact {
+    background-image: url(../images/contact_background5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+}
+/*1024px~ : 데스크탑 , 랩탑*/
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+  /*1.header영역*/
+  header img[alt="메인배경이미지"] {
+    display: block;
+    width: 100%;
+  }
+  header img[alt="모바일메인배경이미지"] {
+    display: none;
+  }
+  /*1.header영역-----------------------------------*/
+  /*2.article영역-----------------------------------*/
+  article .menu_toggle_btn input[id="menuicon"] + label {
+    display: none;
+  }
+  /*top -fixed gnb메뉴*/
+  article .menu_toggle_btn .gnb {
+    display: block;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    background-color: #01172c;
+    padding: 0 50px;
+  }
+  article .menu_toggle_btn .gnb h1 {
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  article .menu_toggle_btn .gnb h1 a h2 {
+    display: block;
+  }
+
+  article .menu_toggle_btn .gnb .gnb_list {
+    margin-top: 0px;
+    padding-left: 0px;
+    float: right;
+    margin-right: 20px;
+    line-height: 80px;
+  }
+  article .menu_toggle_btn .gnb .gnb_list li {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-top: 0px;
+    margin-left: 15px;
+  }
+  article .menu_toggle_btn .gnb_list li a {
+    font-size: 1rem;
+  }
+  article .menu_toggle_btn .gnb_list li a:hover {
+    background-color: rgb(93, 141, 196);
+    padding: 30px;
+  }
+  article .menu_toggle_btn .gnb .gnb_list li .fa-shapes {
+    display: inline-block;
+  }
+  /*2.article영역--------------------------------------*/
+  /*3.profile영역--------------------------------------*/
+  .aboutme .container {
+    max-width: 1024px;
+  }
+  .aboutme .profile_info_first img[alt="프로필사진"] {
+    width: 30%;
+  }
+
+  .aboutme .profile_info_first p {
+    width: 60%;
+    font-size: 1rem;
+  }
+  .aboutme .profile_info_first p span {
+    margin-top: 25px;
+    font-size: 1.5rem;
+  }
+  .aboutme .profile_info_secend div {
+    font-size: 1.125rem;
+  }
+  .aboutme .profile_info_secend div span {
+    font-size: 1.125rem;
+  }
+  /*3.profile영역-------------------------------------------*/
+  /*4.portfolio영역-----------------------------------------*/
+  .portfolio .tab_menu {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 960px;
+  }
+  .portfolio .tab_menu a {
+    padding: 15px 20px;
+    font-size: 1.125rem;
+  }
+  .portfolio .transform_icon {
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .portfolio .transform_icon a {
+    padding: 15px 20px;
+  }
+  .portfolio .grid_portfolio {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .portfolio .grid_portfolio .all {
+    float: left;
+    width: 27%;
+    margin: 0 2.5%;
+    margin-bottom: 50px;
+  }
+  .portfolio .grid_portfolio .all .item p {
+    font-size: 1.25em;
+  }
+  .portfolio .slide_portfolio .slide_menu {
+    width: 80%;
+    margin-top: 100px;
+    margin: 10%;
+  }
+  /*호버시 텍스트*/
+  .portfolio .grid_portfolio .all .item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+  .portfolio .grid_portfolio .all .item .hover::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background-color: #000e1a;
+    z-index: 200;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .portfolio .grid_portfolio .all .item .hover:hover::before {
+    opacity: 0.8;
+  }
+  .portfolio .grid_portfolio .all .item .hover .project_text {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 300;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+    opacity: 0;
+    color: #fff;
+  }
+  .portfolio .grid_portfolio .all .item .hover:hover .project_text {
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(1 0px);
+    opacity: 1;
+  }
+  .portfolio .grid_portfolio .all .item .site_btn a {
+    font-size: 1.125rem;
+  }
+  .slide_portfolio a .fa-chevron-left {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    font-size: 50px;
+    color: #fff;
+  }
+  .slide_portfolio a .fa-chevron-right {
+    position: absolute;
+    top: 95px;
+    right: 40px;
+    font-size: 50px;
+    color: #fff;
+  }
+  /*4.portfolio영역-----------------------------------*/
+  /*5.contact영역-----------------------------------*/
+  .contact {
+    background-image: url(../images/contact_background5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .contact .form_box {
+    float: left;
+    width: 41%;
+    margin: 4%;
+  }
+  .contact .form_box ul li label {
+    font-size: 1.125rem;
+  }
+  .contact .btn button {
+    font-size: 1.125em;
+  }
+  .contact_box {
+    width: 41%;
+    margin: 4%;
+    float: left;
+    transform: translateY(50%);
+    text-align: left;
+  }
+  .contact_box .info_list li {
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+  }
+  .contact_box .info_list li i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .contact_box .sns_icon {
+    width: 100%;
+    font-size: 1.875rem;
+    text-align: center;
+    margin: 0;
+  }
+  .contact_box .sns_icon li:nth-child(1) {
+    margin: 0;
+  }
+  /*5.contact영역*/
+  /*6.aside영역*/
+  .scroll_show .top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+  .scroll_show .top i {
+    font-size: 2.5rem;
+    color: #c7c7c7;
+  }
+  /*6.aside영역*/
+}

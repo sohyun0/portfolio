@@ -1,0 +1,85 @@
+@charset utf-8;
+/*전체페이지에 보더박스 설정*/
+* {
+    box-sizing: border-box;
+}
+/* body에 폰트 속성,배경 속성, 글자 행간 속성 설정*/
+body {
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1;
+}
+/* 웹폰트 CSS*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif');
+/* 웹폰트 CSS*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* CSS 초기화*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, small, strong, sub, sup, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+/* html5 요소들을 IE 구버전에서 정상적으로 작동되도록 설정*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+/* body 폰트 스타일*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}
+
+/* list 관련 속성*/
+nav ul, li {
+    list-style: none;
+}
+/* a 요소*/
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-decoration: none;
+    background: transparent;
+}
+/* img 요소*/
+img {
+    vertical-align: top;
+    text-decoration: none;
+}
+/* hr 요소 : width->가로길이, color->색상, noshade->입체감 없애고 평평한 상태로 보여줌*/
+hr {
+    display: block;
+    height: 2px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+/*폼요소 스타일 추가*/
+input, textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+input, textarea {
+    border-bottom: 1px solid #757575;
+    /*홈페이지 메인색상*/
+    font-family: 'Montserrat';
+    font-size: 12px;
+    border-radius: 0;
+}
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder, {
+    color: #3f51b5;
+}
+::-moz-input-placeholder,
+::-moz-textarea-placeholder, {
+    color: #3f51b5;
+}

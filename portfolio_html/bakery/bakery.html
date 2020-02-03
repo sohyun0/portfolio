@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset_port_var.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!--파비콘 : 탭의 아이콘 확장자.png .ico 32x32-->
+    <link rel="shortcut icon" href="images/png_images/fvi.PNG">
+<!--    즐겨찾기 했을때 나오는 이미지 180x180-->
+    <link rel="apple-touch-icon-precomposed" href="images/png_images/fvi.PNG">
+    <title>가변형구현</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('header .menu_toggle_btn').click(function(){
+                $('header .gnb').slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+       <!--1.헤더시작-->
+        <header class="header cf">
+           <!--로고크기 96x40-->
+            <h1 class="logo">
+                <a href="#">
+                    <img src="images/png_images/logo.png" alt="베이커리로고">
+                </a>
+            </h1>
+            <!--공통gnb시작-->
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">STORY</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">PROMOTION</a></li>
+                    <li><a href="#">STORE</a></li>
+                </ul>
+            </nav>
+            <!--공통gnb끝-->
+            <!--햄버거메뉴 버튼시작-->
+            <span class="menu_toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <!--햄버거메뉴 버튼끝-->
+        </header>
+       <!--1.헤더끝-->
+       
+       <!--2.슬라이더시작-->
+        <article class="slider">
+            <div class="slider_img">
+                <img src="images/jpg_images/slider_images.jpg" alt="슬라이드이미지">
+            </div>
+        </article>
+       <!--2.슬라이더끝-->
+       
+       <!--3.컨텐츠시작-->
+        <section class="contents">
+            <!--3-1.디스플레이 영역 시작-->
+            <section class="display_section">
+                <div class="cf">
+                    <h2 class="sec_title">PROMOTION</h2>
+                    <p class="desc">
+                        오븐에서 방금 꺼낸 빵이 가장 맛있다는 것을 알기에, 베이커리는 지금도
+                        <br>더욱 따뜻하고 촉촉한 갓 구운 빵을 제공하기 위해 끊임없이 노력합니다
+                    </p>
+                </div>
+            </section>
+            <!--3-1.디스플레이 영역 끝-->
+            
+            <!--3-2.프로모션 영역 시작-->
+            <section class="promotion_section">
+                <div>
+                    <ul class="promotion_list cf">
+                        <li>
+                            <a href="#">
+                                <img src="images/icon/story.PNG" alt="스토리">
+                                <h3>STORY</h3>
+                                <p>
+                                    좋은 재료로 만들어 건강하고,매장에서 갓 구워 신선한 빵과 케이크를 만날 수 있는 곳, 여기는 신선함이 가득한 베이커리 입니다.                                    
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"> 
+                                <img src="images/icon/event.PNG" alt="이벤트">
+                                <h3>EVENT</h3>
+                                <p>
+                                    맛좋은 녀석들 당신의 선택은?<br>가장 맛있는 제품을 투표해 주세요.<br>추첨을 통해 제품 교환권을 드립니다.
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <img src="images/icon/reservation.png" alt="케이크예약">
+                                <h3>RESERVATION</h3>
+                                <p>
+                                   전국 케익 예약/배달서비스<br>문의 02-6740-4546<br>배송가능 지역 확인                    
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <img src="images/icon/bell.PNG" alt="공지사항">
+                                <h3>PREMIUM STORE</h3>
+                                <p>
+                                   뚜레쥬르 제일제당사옥 서울특별시 중구 동호로 330 1층 <br>(쌍림동, CJ제일제당빌딩)                 
+                                </p>
+                            </a>
+                        </li>  
+                    </ul>
+                </div>
+            </section>
+            <!--3-2.프로모션 영역 끝-->
+            
+            <hr class="divider">
+            <!--3-3.WORK 영역 시작-->
+            <section class="work_section">
+                <div>
+                    <h2 class="sec_title">PRODUCT</h2>
+                    <ul class="work_list cf">
+                        <li>
+                            <a href="#">
+                               <div>
+                                   <h3>토종효모빵</h3>
+                                   <span>유럽/건강빵</span>
+                               </div>
+                                <img src="images/jpg_images/new1_360.jpg" alt="포트폴리오1">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                               <div>
+                                   <h3>햄&nbsp;샌드위치</h3>
+                                   <span>샌드위치</span>
+                               </div>
+                                <img src="images/jpg_images/new2_360.jpg" alt="포트폴리오1">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                               <div>
+                                   <h3>오리지널&nbsp;크라상</h3>
+                                   <span>파이/페스츄리</span>
+                               </div>
+                                <img src="images/jpg_images/new3_360.jpg" alt="포트폴리오1">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                               <div>
+                                   <h3>파니니</h3>
+                                   <span>샌드위치</span>
+                               </div>
+                                <img src="images/jpg_images/new4_360.jpg" alt="포트폴리오1">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                               <div>
+                                   <h3>오리지널&nbsp;생크림&nbsp;딸기&nbsp;크라상</h3>
+                                   <span>파이/페스츄리</span>
+                               </div>
+                                <img src="images/jpg_images/new5_360.jpg" alt="포트폴리오1">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                               <div>
+                                   <h3>모닝&nbsp;바게트</h3>
+                                   <span>유럽/건강빵</span>
+                               </div>
+                                <img src="images/jpg_images/new6_360.jpg" alt="포트폴리오1">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                               <div>
+                                   <h3>초콜릿&nbsp;머핀</h3>
+                                   <span>간식빵</span>
+                               </div>
+                                <img src="images/jpg_images/new7_360.jpg" alt="포트폴리오1">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                               <div>
+                                   <h3>페스츄리&nbsp;식빵</h3>
+                                   <span>식빵/식사용빵</span>
+                               </div>
+                                <img src="images/jpg_images/new8_360.jpg" alt="포트폴리오1">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m_divider">
+            <!--3-3.WORK 영역 끝-->                        
+            <!--3-4.BLOG 영역 시작-->
+            <section class="blog_section">
+                <div class="cf">
+                    <h2 class="sec_title">STORY</h2>
+                    <ul class="blog_list cf">
+                        <li>
+                            <a href="#">
+                                <img src="images/jpg_images/blog1.jpg" alt="블로그이미지">
+                            </a>
+                            <time datetime="2019-10-25">Oct 25, 2019</time>
+                            <a href="#">
+                                <h3>빵의 개성있는 식감을 잘 살려주는
+                                    베이커리전용 밀가루를 사용한 제품을
+                                    만나보실 수 있습니다 
+                                </h3>
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                <img src="images/jpg_images/blog2.jpg" alt="블로그이미지">
+                            </a>
+                            <time datetime="2019-10-25">Oct 12, 2019</time>
+                            <a href="#">
+                                <h3>
+                                    빵에 아주 조금 들어가지만 없어서는 안되는 중요한 재료소금은 대한민국 천일염 을 사용합니다
+                                </h3>
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                <img src="images/jpg_images/blog3.jpg" alt="블로그이미지">
+                            </a>
+                            <time datetime="2019-10-25">Oct 07, 2019</time>
+                            <a href="#">
+                                <h3>
+                                    빵의 맛을 더 풍부하게 하는 우유,치즈, 채소, 과일등도 자연의 순수함을 그대로 간직한 재료들을 선별하여 사용합니다
+                                </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>                        
+            <!--3-4.BLOG 영역 끝-->                        
+            <!--3-5.연락처작업 영역 시작-->
+            <section class="contact_section">
+                <div class="cf">
+                    <h2 class="sec_title">CONTACT</h2>
+                    <div>
+                       <form action="#" class="form_box">
+                           <fieldset class="cf">
+                               <legend class="blind">CONTACT&nbsp;US</legend>
+                               <!--input폼-->
+                               <div class="form">
+                                   <label for="name" class="blind">Name</label><input type="text" id="name" required="required" autocomplete="off"  placeholder="Name">
+                                   <label for="phone" class="blind">Phone</label><input type="tel" id="phone" placeholder="Phone" required="required" autocomplete="off">
+                                   <label for="email" class="blind">E-mail</label><input type="email" id="email" placeholder="E-mail" required="required" autocomplete="off">
+                               </div>
+                               <!--textarea폼-->
+                               <div class="textarea">
+                                   <label for="message" class="blind">Message</label><textarea id="message" placeholder="Message"></textarea>
+                               </div>
+                           </fieldset>
+                            <div class="send_btn">
+                                <button>
+                                    SEND MESSAGE
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>                     
+            <!--3-5.연락처작업 영역 끝-->                     
+        </section>
+       <!--3.컨텐츠끝-->
+       
+       <!--4.푸터시작-->
+        <footer class="footer">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15043.9523708944!2d126.99699087341257!3d37.564453763798156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca319302c881d%3A0xb186413c3053d0d9!2z65qc66CI7KWs66W0ICjsoJzsnbzsoJzri7kg7IKs7JilKQ!5e0!3m2!1sko!2skr!4v1571974188582!5m2!1sko!2skr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+           
+            <p>
+                COPYRIGHT ALL RIGHTS RESERVED., COMPANY NAME
+            </p>
+        </footer>
+       <!--4.푸터끝-->
+    </div>
+</body>
+</html>

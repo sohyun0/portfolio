@@ -1,0 +1,332 @@
+@charset "uft-8";
+#wrap {
+    background: #000;
+    width: 360px;
+    margin: 0 auto; 
+    font-family: 'Montserrat',sans-serif;
+}
+/*헤더영역*/
+header {
+    padding: 10px 16px;
+}
+header .ham {
+    float: left;
+   margin-top: 5px;
+}
+header .logo {
+    float: left;
+    margin-left: 100px;
+}
+header .search {
+    float: right;
+    margin-top: 5px;
+}
+/*헤더영역*/
+/*슬라이드영역*/
+article div img {
+    width: 100%;
+    margin-top: 5px;
+}
+article .gnb {
+    margin-top: 20px;
+}
+article .gnb li {
+    color: #fff;
+    float: left;
+    margin-left: 16px;
+    font-size: 0.875rem;
+}
+article .gnb li:nth-child(2){
+    color: #bbb;
+}
+article .gnb li:nth-child(3){
+    font-weight: bold;
+    font-size: 1rem;
+}
+article .gnb li:nth-child(4){
+    color: #bbb;
+    margin-bottom: 40px;
+}
+/*슬라이드영역*/
+/*컨텐츠영역*/
+/*사진1*/
+.content div {
+    text-align: center;
+}
+.content .actor_1 {
+    position: relative; 
+}
+.content .actor_1 .text_1 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_1 .text_1 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_1 .text_1 img {
+    float: right;
+}
+/*사진1*/
+/*사진2 -- 2번을 기준으로 밑에 9개 다같은코딩*/
+.content .actor_2 {
+    margin-top: 40px;
+}
+.content .actor_2 {
+    position: relative; 
+}
+.content .actor_2 .text_2 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_2 .text_2 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_2 .text_2 img {
+    float: right;
+}
+/*사진2 --- */
+/*사진3*/
+.content .actor_3 {
+    margin-top: 40px;
+}
+.content .actor_3 {
+    position: relative; 
+}
+.content .actor_3 .text_3 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_3 .text_3 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_3 .text_3 img {
+    float: right;
+}
+/*사진3*/
+/*사진4*/
+.content .actor_4 {
+    margin-top: 40px;
+}
+.content .actor_4 {
+    position: relative; 
+}
+.content .actor_4 .text_4 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_4 .text_4 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_4 .text_4 img {
+    float: right;
+}
+/*사진4*/
+/*사진5*/
+.content .actor_5 {
+    margin-top: 40px;
+}
+.content .actor_5 {
+    position: relative; 
+}
+.content .actor_5 .text_5 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_5 .text_5 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_5 .text_5 img {
+    float: right;
+}
+/*사진5*/
+/*사진6*/
+.content .actor_6 {
+    margin-top: 40px;
+}
+.content .actor_6 {
+    position: relative; 
+}
+.content .actor_6 .text_6 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_6 .text_6 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_6 .text_6 img {
+    float: right;
+}
+/*사진6*/
+/*사진7*/
+.content .actor_7 {
+    margin-top: 40px;
+}
+.content .actor_7 {
+    position: relative; 
+}
+.content .actor_7 .text_7 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_7 .text_7 h2 {
+    float: left;
+    margin-right: 168px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_7 .text_7 img {
+    float: right;
+}
+/*사진7*/
+/*사진8*/
+.content .actor_8 {
+    margin-top: 40px;
+}
+.content .actor_8 {
+    position: relative; 
+}
+.content .actor_8 .text_8 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_8 .text_8 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_8 .text_8 img {
+    float: right;
+}
+/*사진8*/
+/*사진9*/
+.content .actor_9 {
+    margin-top: 40px;
+}
+.content .actor_9 {
+    position: relative; 
+}
+.content .actor_9 .text_9 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_9 .text_9 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_9 .text_9 img {
+    float: right;
+}
+/*사진9*/
+/*사진10*/
+.content .actor_10 {
+    margin-top: 40px;
+}
+.content .actor_10 {
+    position: relative; 
+}
+.content .actor_10 .text_10 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_10 .text_10 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_10 .text_10 img {
+    float: right;
+}
+/*사진10*/
+
+/*컨텐츠영역*/
+
+/*푸터영역*/
+footer {
+    margin-top: 40px;
+    width: 100%;
+    height: 123px;
+    background-color: #e1e1e1;
+}
+footer .copy {
+    padding-top: 13px;
+    margin-top: 1px;
+    margin-left: 32px;
+}
+footer .copy ul{
+    margin-top: 7px;
+    float: left;
+    font-size: 0.1rem;
+}
+footer .copy ul li {
+    font-weight: 700;
+    text-align: center;
+}
+footer .copy .border {
+    float: left;
+    margin: 10px 20px 20px 20px;
+    border-left: 1px solid #838383;
+
+}
+footer .copy .border p {
+    font-size: 9px;
+    font-weight: normal;
+    color: #2a2a2a;
+    padding-left: 15px;
+}
+footer .sns p{
+    width: 186px;
+    font-size: 9px;
+    font-weight: normal;
+    font-family: 'Noto Sans KR', sans-serif;
+    float: left;
+    letter-spacing: -1px;
+    margin-left: 32px;
+    margin-top: 3px;
+}
+footer .sns img {
+    width: 99px;
+    float: right;
+    margin-right: 32px;
+}

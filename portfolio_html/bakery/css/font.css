@@ -1,0 +1,62 @@
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+/*font-family: 'Nanum Pen Script', cursive;*/
+.nanumpenscript {font-family: 'Nanum Pen Script', cursive;}
+/*font-family: 'Roboto', sans-serif;*/
+.roboto {font-family: 'Roboto', sans-serif;}
+/*font-family: 'Monoton', cursive;*/
+.monoton {font-family: 'Monoton', cursive;}
+/*font-family: 'PT Sans', sans-serif;*/
+.ptsans {font-family: 'PT Sans', sans-serif;}
+/*font-family: 'Noto Serif KR', serif;*/
+.notoserifkr{font-family: 'Noto Serif KR', serif;}
+/*font-family: 'Noto Sans KR', sans-serif;*/
+.notosanskr{font-family: 'Noto Sans KR', sans-serif;}
+/*font-family: 'Oswald', sans-serif;*/
+.oswald{font-family: 'Oswald', sans-serif;}
+/*font-family: 'Nanum Gothic', sans-serif;*/
+.nanumgothic{font-family: 'Nanum Gothic', sans-serif;}
+/*font-family: 'Nanum Brush Script', cursive;*/
+.nanumbrush{font-family: 'Nanum Brush Script', cursive;}
+/*font-family: 'Open Sans', sans-serif;*/
+.opensans{font-family: 'Open Sans', sans-serif;}
+/*font-family: 'Montserrat', sans-serif;*/
+.montserrat{font-family: 'Montserrat', sans-serif;}
+/*font-family: 'Raleway', sans-serif;*/
+.raleway{font-family: 'Raleway', sans-serif;}
+/*font-family: 'Noto Sans', sans-serif;*/
+.notosans{font-family: 'Noto Sans', sans-serif;}
+/*font-family: 'PT Serif', serif;*/
+.ptserif{font-family: 'PT Serif', serif;}
+/*font-family: 'Titillium Web', sans-serif;*/
+.titilliumweb{font-family: 'Titillium Web', sans-serif;}
+/*font-family: 'Noto Serif', serif;*/
+.notoserif{font-family: 'Noto Serif', serif;}
+/*font-family: 'Nanum Myeongjo', serif;*/
+.nanummyeongjo{font-family: 'Nanum Myeongjo', serif;}
+/*font-family: 'Nanum Gothic Coding', monospace;*/
+nanumgothiccoding{font-family: 'Nanum Gothic Coding', monospace;}
+/*font-family: 'Quicksand', sans-serif;*/
+quicksand{font-family: 'Quicksand', sans-serif;}
+/*font-family: 'Anton', sans-serif;*/
+anton{font-family: 'Anton', sans-serif;}

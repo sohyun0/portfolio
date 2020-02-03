@@ -1,0 +1,297 @@
+@charset "urf-8";
+
+/*공용*/
+
+.cf:after {
+    content: "";
+    display: none;
+    clear: both;
+}
+
+hr {
+    background-color: #e3e3e3;
+    width: 328px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    height: 1px;
+}
+
+h1 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+}
+
+/*공통끝*/
+
+#wrap {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+    height: 2292px;
+    font-family: 'Noto Sans KR',sans-serif;
+}
+
+/*헤더시작*/
+
+header {
+    padding: 0 16px;
+    position: absolute;
+    z-index: 10;
+}
+
+header .ham {
+    margin: 10px 0;
+    float: left;
+}
+
+header .logo {
+    margin: 6px 0;
+    float: left;
+    margin-left: 98px;
+}
+
+header .search {
+    margin: 10px 0;
+    float: right;
+    margin-left: 98px;
+}
+
+/*헤더끝*/
+
+/*아티클시작*/
+
+article {
+    
+}
+
+article .article {
+    position: relative;
+}
+
+article .article .slide img {
+    width: 100%;
+}
+
+article .slide .dot ul li {
+    width: 6px;
+    height: 6px;
+    background-color: #c3c3c3;
+    margin-left: 2px;
+    float: left;
+    border-radius: 50%;
+}
+
+article .slide .dot ul li:nth-child(1){
+    margin-left: 0;
+}
+
+article .slide .dot ul {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+/*아티클끝*/
+
+/*섹션시작*/
+
+section {
+    width: 100%;
+    height: 1529px;
+}
+
+section .music {
+    height: 280px;
+}
+
+section .music .round .circle {
+    margin-top: 35px;
+    width: 70px;
+    height: 70px;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    float: left;
+}
+
+section .music p {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+section .music p span {
+    font-size: 12px;
+}
+
+section .music img {
+    margin-bottom: 72px;
+}
+
+
+
+
+.news {
+    
+}
+
+.news .head {
+    
+}
+
+.news .head h1 {
+    float: left;
+    margin-bottom: 28px;
+}
+
+.news .head img {
+    float: right;
+}
+
+.news .box1 img {
+    margin: 20px 0;
+    float: left;
+}
+
+.news .box1 h2 {
+    margin: 23px 0 10px 7px;
+    float: left;
+    font-size: 16px;
+}
+
+.news .box1 p {
+    margin-left: 7px;
+    float: left;
+    font-size: 14px;
+}
+
+.news .box2 img {
+    margin: 20px 0;
+    float: left;
+}
+
+.news .box2 h2 {
+    margin: 23px 0 10px 7px;
+    float: left;
+    font-size: 16px;
+}
+
+.news .box2 p {
+    margin-left: 7px;
+    float: left;
+    font-size: 14px;
+}
+
+.news .box3 img {
+    margin: 20px 0;
+    float: left;
+}
+
+.news .box3 h2 {
+    margin: 23px 0 10px 7px;
+    float: left;
+    font-size: 16px;
+}
+
+.news .box3 p {
+    margin-left: 7px;
+    float: left;
+    font-size: 14px;
+}
+
+
+
+.banner1 {
+    margin: 50px 0;    
+}
+
+
+
+.onair {
+    display: block;
+    background: #000;
+    height: 412px;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.onair .head h1 {
+    display: block;
+    padding: 50px 0;
+    text-align: left;
+/*    float: left;*/
+}
+
+.onair .all_box {
+    text-align: left;
+    font-size: 12px;
+    font-family: "Noto sans kr",sans-serif;
+    font-weight: normal;
+    position: relative;
+    margin-left: 16px;
+}
+
+.onair span {
+    color: red;
+}
+
+.onair .all_box .box4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.onair .all_box .box4 h2 {
+    margin-top: 12px;
+}
+
+.onair .all_box .box4 p {
+    margin-top: 10px;
+}
+
+.onair .all_box .box5{
+    position: absolute;
+    top: 0;
+    left: 144px;
+}
+
+.onair .all_box .box5 h2 {
+    margin-top: 12px;
+}
+
+.onair .all_box .box5 p {
+    margin-top: 10px;
+}
+
+.onair .all_box .box6 {
+    position: absolute;
+    top: 0;
+    left: 288px;
+}
+
+.onair .all_box .box6 h2 {
+    margin-top: 12px;
+}
+
+.onair .all_box .box6 p {
+    margin-top: 10px;
+}
+
+
+/*섹션끝*/
+
+/*푸터시작*/
+
+footer {
+    height: 123px;
+    background-color: #d1d1d1;
+    margin-top: 4px;
+}
+
+footer {
+    font-size: 10px;
+}
