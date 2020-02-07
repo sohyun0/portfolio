@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* 화살표 */
+.slick-prev {
+  z-index: 100;
+  left: 20px;
+  top: 40%;
+}
+.slick-next {
+  z-index: 100;
+  right: 20px;
+  top: 40%;
+}
+.slick-prev:before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  color: #000;
+}
+
+.slick-next:before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  color: #000;
+}
+
+/* 아래점 */
+.slick-dots li button:before {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
