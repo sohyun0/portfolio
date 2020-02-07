@@ -120,6 +120,9 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
 .content .visual img {
   width: 100%;
 }
+.content .visual img[alt="비쥬얼이미지-모바일"] {
+  display: none;
+}
 /*2. 비쥬얼이미지*/
 .content .container > h2 {
   display: none;
@@ -477,6 +480,12 @@ footer p {
   /*2.비쥬얼이미지*/
   .content .visual {
     padding-top: 65px;
+  }
+  .content .visual img[alt="비쥬얼이미지"] {
+    display: none;
+  }
+  .content .visual img[alt="비쥬얼이미지-모바일"] {
+    display: block;
   }
   /*2.비쥬얼이미지*/
   /* 3. 컨텐츠영역 */
