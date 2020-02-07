@@ -1,0 +1,115 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.aboutme .swiper-container {
+  max-width: 1280px;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide {
+  margin: 60px 0;
+  text-align: center;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .pf-img {
+  position: relative;
+  width: 100%;
+  margin-left: 50px;
+}
+/* 버튼모션 */
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .pf-img .arrbtn {
+  position: absolute;
+  top: 150px;
+  left: 90px;
+  display: inline-block;
+}
+.arrbtn i {
+  position: absolute;
+  top: 0;
+  font-size: 60px;
+  color: #8ccbf8;
+}
+.arrbtn i:nth-child(1) {
+  animation: ani linear 1.5s 0s infinite;
+}
+.arrbtn i:nth-child(2) {
+  animation: ani linear 1.5s 0.3s infinite;
+}
+.arrbtn i:nth-child(3) {
+  animation: ani linear 1.5s 0.7s infinite;
+}
+@keyframes ani {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    right: 0;
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+    right: 80px;
+  }
+}
+/* 박스 스타일 */
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .bd-box {
+  position: relative;
+  margin: 0 30px;
+  background: #fff;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .bd-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #000;
+  transform: skew(1deg, 1deg);
+  z-index: -2;
+}
+/* 버튼모션 */
+.aboutme
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .pf-img
+  img[alt="프로필사진"] {
+  border: 10px double #8ccbf8;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .intro {
+  line-height: 2;
+  font-size: 0.875rem;
+  padding: 25px 0;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .intro span {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: block;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .profile {
+  padding: 26px 0;
+  font-size: 1rem;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .profile ul li {
+  margin-bottom: 15px;
+}
+.fa-quote-left {
+  font-size: 1rem;
+  color: #01172c;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.fa-quote-left span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .profile2 {
+  padding: 41px 0;
+  font-size: 1rem;
+}
+.aboutme .swiper-container .swiper-wrapper .swiper-slide .profile2 ul li {
+  margin-bottom: 15px;
+}

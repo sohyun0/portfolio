@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mobile MockUp</title>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <style>
+      #wrap {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .mockup {
+        position: relative;
+        top: 0;
+        width: 404px;
+        height: 818px;
+        margin: 0 auto;
+        background: url("images/ip2.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      .iframe_box {
+        position: absolute;
+        left: 20px;
+        top: 85px;
+        z-index: 1;
+      }
+      iframe {
+        width: 380px;
+        height: 630px;
+      }
+      @media screen and (max-width: 480px) {
+        .iframe_box {
+          position: absolute;
+          left: 13px;
+          top: 92px;
+          z-index: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div class="mockup">
+        <div class="iframe_box">
+          <iframe src="index.html" frameborder="0">
+            이 브라우저는 IFRAME을 지원하지 않습니다.
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

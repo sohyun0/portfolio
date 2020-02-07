@@ -1,0 +1,519 @@
+@charset "uft-8";
+#wrap {
+    background: #000;
+    width: 360px;
+    margin: 0 auto; 
+    font-family: 'Montserrat',sans-serif;
+}
+/*헤더영역*/
+header {
+    padding: 10px 16px;
+}
+header .ham {
+    float: left;
+   margin-top: 5px;
+}
+header .logo {
+    float: left;
+    margin-left: 100px;
+}
+header .search {
+    float: right;
+    margin-top: 5px;
+}
+/*헤더영역*/
+/*슬라이드영역*/
+article div img {
+    width: 100%;
+    margin-top: 5px;
+}
+article .gnb {
+    margin-top: 20px;
+}
+article .gnb li {
+    color: #fff;
+    float: left;
+    margin-left: 16px;
+    font-size: 0.875rem;
+}
+article .gnb li:nth-child(2){
+    color: #bbb;
+}
+article .gnb li:nth-child(3){
+    font-weight: bold;
+    font-size: 1rem;
+}
+article .gnb li:nth-child(4){
+    color: #bbb;
+    margin-bottom: 40px;
+}
+/*슬라이드영역*/
+/*컨텐츠영역*/
+/*사진1*/
+.content div {
+    text-align: center;
+}
+.content .actor_1 {
+    position: relative; 
+}
+.content .actor_1 .text_1 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_1 .text_1 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_1 .text_1 img {
+    float: right;
+}
+/*사진1*/
+/*사진2 -- 2번을 기준으로 밑에 9개 다같은코딩*/
+.content .actor_2 {
+    margin-top: 40px;
+}
+.content .actor_2 {
+    position: relative; 
+}
+.content .actor_2 .text_2 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_2 .text_2 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_2 .text_2 img {
+    float: right;
+}
+/*사진2 --- */
+/*사진3*/
+.content .actor_3 {
+    margin-top: 40px;
+}
+.content .actor_3 {
+    position: relative; 
+}
+.content .actor_3 .text_3 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_3 .text_3 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_3 .text_3 img {
+    float: right;
+}
+/*사진3*/
+/*사진4*/
+.content .actor_4 {
+    margin-top: 40px;
+}
+.content .actor_4 {
+    position: relative; 
+}
+.content .actor_4 .text_4 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_4 .text_4 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_4 .text_4 img {
+    float: right;
+}
+/*사진4*/
+/*사진5*/
+.content .actor_5 {
+    margin-top: 40px;
+}
+.content .actor_5 {
+    position: relative; 
+}
+.content .actor_5 .text_5 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_5 .text_5 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_5 .text_5 img {
+    float: right;
+}
+/*사진5*/
+/*사진6*/
+.content .actor_6 {
+    margin-top: 40px;
+}
+.content .actor_6 {
+    position: relative; 
+}
+.content .actor_6 .text_6 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_6 .text_6 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_6 .text_6 img {
+    float: right;
+}
+/*사진6*/
+/*사진7*/
+.content .actor_7 {
+    margin-top: 40px;
+}
+.content .actor_7 {
+    position: relative; 
+}
+.content .actor_7 .text_7 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_7 .text_7 h2 {
+    float: left;
+    margin-right: 168px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_7 .text_7 img {
+    float: right;
+}
+/*사진7*/
+/*사진8*/
+.content .actor_8 {
+    margin-top: 40px;
+}
+.content .actor_8 {
+    position: relative; 
+}
+.content .actor_8 .text_8 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_8 .text_8 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_8 .text_8 img {
+    float: right;
+}
+/*사진8*/
+/*사진9*/
+.content .actor_9 {
+    margin-top: 40px;
+}
+.content .actor_9 {
+    position: relative; 
+}
+.content .actor_9 .text_9 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_9 .text_9 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_9 .text_9 img {
+    float: right;
+}
+/*사진9*/
+/*사진10*/
+.content .actor_10 {
+    margin-top: 40px;
+}
+.content .actor_10 {
+    position: relative; 
+}
+.content .actor_10 .text_10 {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    z-index: 10;
+}
+.content .actor_10 .text_10 h2 {
+    float: left;
+    margin-right: 150px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.content .actor_10 .text_10 img {
+    float: right;
+}
+/*사진10*/
+
+/*컨텐츠영역*/
+
+/*푸터영역*/
+footer {
+    margin-top: 40px;
+    width: 100%;
+    height: 123px;
+    background-color: #e1e1e1;
+}
+footer .copy {
+    padding-top: 13px;
+    margin-top: 1px;
+    margin-left: 32px;
+}
+footer .copy ul{
+    margin-top: 7px;
+    float: left;
+    font-size: 0.1rem;
+}
+footer .copy ul li {
+    font-weight: 700;
+    text-align: center;
+}
+footer .copy .border {
+    float: left;
+    margin: 10px 20px 20px 20px;
+    border-left: 1px solid #838383;
+
+}
+footer .copy .border p {
+    font-size: 9px;
+    font-weight: normal;
+    color: #2a2a2a;
+    padding-left: 15px;
+}
+footer .sns p{
+    width: 186px;
+    font-size: 9px;
+    font-weight: normal;
+    font-family: 'Noto Sans KR', sans-serif;
+    float: left;
+    letter-spacing: -1px;
+    margin-left: 32px;
+    margin-top: 3px;
+}
+footer .sns img {
+    width: 99px;
+    float: right;
+    margin-right: 32px;
+}
+
+/*별도*/
+
+
+
+
+
+
+
+
+
+
+
+header .mobile_gnb {
+    text-align: left;
+    width: 150px;
+    height: 1000px;
+    background-color: #4a4a4a;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s;
+    z-index: 100;
+}
+
+header .mobile_gnb {
+    opacity: 0;
+    position: fixed;
+    left: -150px;
+}
+
+header .mobile_gnb {
+    padding: 46px 0 0 0;
+    font-family: 'Lato',sans-serif;
+    font-size: 0.8rem;
+}
+
+header .mobile_gnb .gnb>li {
+    height: 42px;
+    line-height: 42px;
+    padding-left: 24px;
+    transition: all 0.5s;
+}
+
+header .mobile_gnb .gnb>li:hover {
+    background: #fff;
+}
+
+header .mobile_gnb .gnb>li>a {
+    display: block;
+    color: #fff;
+}
+
+header .mobile_gnb .gnb>li>a:hover {
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    color: #b4b4b4;
+    font-weight: normal;
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+.list:hover {
+    color: #fff;
+}
+
+.line2 {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 24px;
+}
+
+.exit1 {
+    position: absolute;
+    top: 20px;
+    left: 95px;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 24px;
+    margin-bottom: 40px;
+/*    opacity: 0;*/
+    transition: all 0.3s;
+}
+
+.exit2 {
+    position: absolute;
+    top: 20px;
+    left: 95px;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 24px;
+    margin-bottom: 40px;
+/*    opacity: 0;*/
+    transition: all 0.3s;
+}
+
+
+
+.exit1 {
+    transform: rotate(-45deg);
+}
+
+.exit2 {
+    transform: rotate(45deg);
+}
+
+
+/*햄버거메뉴끝*/
+
+
+.box {
+    width: 360px;
+    height: 50px;
+    position: relative;
+    transition: all 0.3s;
+    display: none;
+    z-index: 500;
+}
+
+/* 1. Hover 검색창 */
+
+
+/* 돋보기 아이콘 */
+
+.hover_search {
+/*    opacity: 0;*/
+    position: fixed;
+    top: -50px;
+    right: 0px;
+}
+
+.hover_search .icon {
+    color: #464646;
+    position: absolute;
+    right: 30px;
+    top: 33%;
+}
+
+/* input 박스 */
+
+.hover_search #search {
+    width: 360px;
+    height: 50px;
+    font-size: 14px;
+    padding-left: 45px;
+    color: #63717f;
+    background-color: #5d5d5d;
+    border: 1px solid #000;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+/*    box-shadow: 0 5px rgba(31, 33, 51, 0.35);*/
+    cursor: pointer;
+/*    트랜지션 */
+    transition: all 0.4s;
+}
+
+/* search 색상변경 */
+
+.hover_search #search:hover,
+.hover_search #search:focus {
+    background-color: #fff;
+/*    input 클릭 시 브라우저 스타일 색상 없앰(브라우저마다다름)*/
+    outline: none;
+}
+
+/* placeholder 스타일 지정방법(IE구버전 지원안함) */
+/* 웹킷엔진용(크롬,사파리) */
+
+.hover_search #search::-webkit-input-placeholder 
+{
+    color: #65737e;
+}
+
+/* 최신 모던 브라우저(파이어폭스 포함) */
+
+.hover_search #search::placeholder {
+    color: #65737e;
+}
