@@ -6,9 +6,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-::-webkit-scrollbar {
-  display: none;
-}
 .cf:after {
   content: "";
   display: block;
@@ -25,8 +22,6 @@
 .font_na {
   letter-spacing: 2px;
   font-weight: bold;
-}
-#wrapper {
 }
 
 /*1.헤더영역*/

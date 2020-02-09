@@ -1,13 +1,6 @@
-$(".gnb-depth1 li")
-  .mouseenter(function() {
-    $(this)
-      .children(".gnb-depth2")
-      .stop()
-      .slideDown();
-  })
-  .mouseleave(function() {
-    $(this)
-      .children(".gnb-depth2")
-      .stop()
-      .slideUp();
-  });
+$(".gnb-depth1 li").on("click", function() {
+  $(this)
+    .children(".gnb-depth2")
+    .stop()
+    .slideToggle();
+});
