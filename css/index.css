@@ -7,7 +7,6 @@
   padding: 0;
   font-family: "NanumSquareRound", sans-serif;
 }
-/*공통영역 코딩 필요한부분 불러쓰기*/
 .cf:after {
   content: "";
   display: block;
@@ -46,19 +45,12 @@
   max-width: 1280px;
   margin: 0 auto;
 }
-/*320px~480px 모바일 세로기준*/
-/*1.header영역---------------------------------------------------*/
-/*2.gnb영역---------------------------------------------------*/
-
-/*모바일 gnb메뉴----------------------*/
-/*인풋버튼 가리기*/
 header .menu_toggle_btn {
   z-index: 1000;
 }
 header .menu_toggle_btn input[id="menuicon"] {
   display: none;
 }
-/*액자역할*/
 header .menu_toggle_btn input[id="menuicon"] + label {
   display: block;
   width: 24px;
@@ -69,7 +61,6 @@ header .menu_toggle_btn input[id="menuicon"] + label {
   left: 15px;
   z-index: 100;
 }
-/*햄버거메뉴 만들기*/
 header .menu_toggle_btn input[id="menuicon"] + label span {
   display: block;
   width: 100%;
@@ -79,7 +70,6 @@ header .menu_toggle_btn input[id="menuicon"] + label span {
   z-index: 100;
   transition: all 0.3s;
 }
-/*햄버거메뉴 배치*/
 header .menu_toggle_btn input[id="menuicon"] + label > span:nth-child(1) {
   top: 0;
 }
@@ -90,7 +80,6 @@ header .menu_toggle_btn input[id="menuicon"] + label > span:nth-child(2) {
 header .menu_toggle_btn input[id="menuicon"] + label > span:nth-child(3) {
   bottom: 0;
 }
-/*클릭시 햄버거메뉴 변환*/
 header
   .menu_toggle_btn
   input[id="menuicon"]:checked
@@ -117,9 +106,6 @@ header
 header .menu_toggle_btn input[id="menuicon"]:checked + label + nav {
   left: 0px;
 }
-
-/*기본화면 gnb메뉴----------------------*/
-/*side gnb 메뉴*/
 header .menu_toggle_btn .gnb {
   width: 240px;
   height: 100%;
@@ -161,7 +147,6 @@ header .menu_toggle_btn .gnb_list li a i {
   margin-right: 20px;
   font-size: 1.125rem;
 }
-/*높은 해상도에서만 보이게하기*/
 header img[alt="메인배경이미지"] {
   display: none;
 }
@@ -169,18 +154,13 @@ header img[alt="모바일메인배경이미지"] {
   width: 100%;
   position: relative;
 }
-/*1.header영역---------------------------------------------------*/
 #wrap > h2 {
   display: none;
 }
-/*2.aboutme영역---------------------------------------------------*/
 .aboutme h2 {
   color: #000;
 }
 /* swiper_custom.css에 있음 */
-/*2.aboutme영역---------------------------------------------------*/
-/*3.portfolio영역---------------------------------------------------*/
-/*3-1 상단메뉴버튼영역----------------------*/
 .portfolio {
   background-color: #01172c;
   padding-bottom: 30px;
@@ -211,8 +191,6 @@ header img[alt="모바일메인배경이미지"] {
   cursor: pointer;
   margin-bottom: 10px;
 }
-/*3-1 상단메뉴버튼영역----------------------*/
-/*3-2 그리드포트폴리오영역----------------------*/
 .portfolio .grid_portfolio {
   width: 90%;
   margin: 5% auto;
@@ -239,9 +217,6 @@ header img[alt="모바일메인배경이미지"] {
   border-radius: 5px;
   background-color: #bfe5e3;
 }
-/*3-2 그리드포트폴리오영역----------------------*/
-/*3.portfolio영역---------------------------------------------------*/
-/*4.contact영역---------------------------------------------------*/
 .contact {
   background-image: url(../images/contact_mobile.jpg);
   background-repeat: no-repeat;
@@ -256,7 +231,6 @@ header img[alt="모바일메인배경이미지"] {
   color: #fff;
   text-shadow: 1px 1px 1px #ccc;
 }
-/*4-1폼영역----------------------------*/
 .contact .form_box {
   width: 90%;
   margin: 0 auto;
@@ -313,8 +287,6 @@ header img[alt="모바일메인배경이미지"] {
 .contact .form_box span {
   color: #f00;
 }
-/*4-1폼영역---------------------------*/
-/*4-2정보영역----------------------------*/
 .contact_box {
   margin-top: 30px;
   text-align: center;
@@ -355,8 +327,6 @@ header img[alt="모바일메인배경이미지"] {
   color: #3c1e1e;
   background: #faff00;
 }
-/*4-2정보영역----------------------------*/
-/*5.aside 영역--------------------------------------------*/
 .scroll_show .top {
   position: fixed;
   right: 10px;
@@ -366,8 +336,6 @@ header img[alt="모바일메인배경이미지"] {
   font-size: 1.5rem;
   color: #8ccbf8;
 }
-/*5.aside 영역--------------------------------------------*/
-/*6.footer 영역--------------------------------------------*/
 footer p {
   text-align: center;
   padding-top: 20px;
@@ -381,16 +349,10 @@ footer p:nth-child(2) {
 footer p:last-child {
   display: none;
 }
-/*6.footer 영역--------------------------------------------*/
-
-/*Media Query---------------------------------------------*/
-/*가로모드 공통*/
 @media screen and (orientation: landscape) {
-  /*1.header 영역*/
   header .menu_toggle_btn input[id="menuicon"] + label {
     display: none;
   }
-  /*top -fixed gnb메뉴*/
   header .menu_toggle_btn .gnb {
     display: block;
     width: 100%;
@@ -421,12 +383,9 @@ footer p:last-child {
     padding-top: 0px;
     margin-left: 15px;
   }
-  /*1.header영역*/
 }
 
-/*480px~: 모바일 or 저해상도 태블릿*/
 @media screen and (min-width: 480px) {
-  /*3.portfolio영역-----------------------------------*/
   .portfolio .tab_menu a {
     margin: 0 auto;
     display: inline-block;
@@ -437,15 +396,13 @@ footer p:last-child {
   .portfolio .grid_portfolio .all .item a .project_text {
     font-size: 1.125rem;
   }
-  /*3.portfolio영역-----------------------------------*/
 }
 
-/*767px~: 태블릿 세로*/
 @media screen and (min-width: 767px) {
   .title {
     font-size: 2rem;
   }
-  /*1.header영역*/
+
   header .menu_toggle_btn inzput[id="menuicon"] + label {
     display: block;
     width: 30px;
@@ -456,6 +413,12 @@ footer p:last-child {
     left: 15px;
     z-index: 100;
   }
+  header .menu_toggle_btn .gnb .gnb_list li {
+    font-size: 1rem;
+    padding-top: 0px;
+    margin-left: 20px;
+    text-align: center;
+  }
   header img[alt="메인배경이미지"] {
     display: block;
     width: 100%;
@@ -464,8 +427,6 @@ footer p:last-child {
   header img[alt="모바일메인배경이미지"] {
     display: none;
   }
-  /*1.header영역*/
-  /*3.portfolio영역-----------------------------------*/
   .portfolio .grid_portfolio .all {
     float: left;
     width: 45%;
@@ -475,25 +436,25 @@ footer p:last-child {
   .portfolio .grid_portfolio .all .item a .project_text {
     font-size: 1rem;
   }
-  /*3.portfolio영역*/
-  /*4.contact영역*/
   .contact_box .info_list li {
     font-size: 1.125rem;
   }
-  /*4.contact영역*/
 }
 
-/*767px~: 태블릿 가로*/
 @media screen and (min-width: 767px) and (orientation: landscape) {
   .title {
     font-size: 2rem;
   }
-  /* 1.header영역 */
   header .menu_toggle_btn .gnb {
     padding: 0 40px;
   }
   header .menu_toggle_btn .gnb h1 a span {
     display: block;
+  }
+  header .menu_toggle_btn .gnb .gnb_list li {
+    font-size: 1rem;
+    padding-top: 0px;
+    margin-left: 20px;
   }
   header img[alt="메인배경이미지"] {
     display: block;
@@ -502,26 +463,20 @@ footer p:last-child {
   header img[alt="모바일메인배경이미지"] {
     display: none;
   }
-  /* 1.header영역 */
-  /* 4.contact영역 */
   .contact {
     background-image: url(../images/contact_background5.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
   }
-  /* 4.contact영역 */
 }
-/*1024px~ : 데스크탑 , 랩탑*/
 @media screen and (min-width: 1024px) {
   .title {
     font-size: 3rem;
   }
-  /*1.header영역-----------------------------------*/
   header .menu_toggle_btn input[id="menuicon"] + label {
     display: none;
   }
-  /*top -fixed gnb메뉴*/
   header .menu_toggle_btn .gnb {
     display: block;
     width: 100%;
@@ -574,9 +529,6 @@ footer p:last-child {
   header img[alt="모바일메인배경이미지"] {
     display: none;
   }
-  /*1.header영역--------------------------------------*/
-
-  /*3.portfolio영역-----------------------------------------*/
   .portfolio .tab_menu {
     margin: 0 auto;
     margin-top: 50px;
@@ -612,7 +564,6 @@ footer p:last-child {
     margin-top: 100px;
     margin: 10%;
   }
-  /*호버시 텍스트*/
   .portfolio .grid_portfolio .all .item a {
     width: 100%;
     height: 100%;
@@ -669,8 +620,6 @@ footer p:last-child {
     font-size: 50px;
     color: #fff;
   }
-  /*3.portfolio영역-----------------------------------*/
-  /*4.contact영역-----------------------------------*/
   .contact {
     background-image: url(../images/contact_background5.jpg);
     background-repeat: no-repeat;
@@ -715,8 +664,6 @@ footer p:last-child {
   .contact_box .sns_icon li:nth-child(1) {
     margin: 0;
   }
-  /*4.contact영역*/
-  /*5.aside영역*/
   .scroll_show .top {
     position: fixed;
     right: 20px;
@@ -726,5 +673,4 @@ footer p:last-child {
     font-size: 2.5rem;
     color: #c7c7c7;
   }
-  /*5.aside영역*/
 }
