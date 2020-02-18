@@ -1,9 +1,0 @@
-@charset "utf-8";
-.swiper-container {
-  width: 100%;
-  max-width: 1200px;
-  max-height: 720px;
-}
-.swiper-container .swiper-wrapper img {
-  width: 100%;
-}

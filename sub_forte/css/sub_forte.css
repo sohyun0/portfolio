@@ -23,7 +23,6 @@
   letter-spacing: 2px;
   font-weight: bold;
 }
-/*1.헤더영역*/
 header .btn_menu_toggle input[id="menuicon"] {
   display: none;
 }
@@ -35,7 +34,6 @@ header .btn_menu_toggle .gnb {
   height: auto;
   padding: 0 50px;
   background: #b0bfe1;
-  /*추후변경*/
   position: fixed;
   z-index: 1000;
 }
@@ -78,7 +76,6 @@ header .btn_menu_toggle .gnb .gnb-depth1 > li > a {
   line-height: 70px;
 }
 header .btn_menu_toggle .gnb .gnb-depth1 > li:hover {
-  /*색상수정*/
   color: #fff;
   background-color: #6372c6;
   font-weight: normal;
@@ -99,15 +96,12 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p {
   color: #000;
 }
 header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
-  /*색상수정*/
   background: #6372c6;
   color: #fff;
 }
-/*1.헤더영역*/
 .content > h2 {
   display: none;
 }
-/*2. 비쥬얼이미지*/
 .content .visual {
   padding-top: 70px;
 }
@@ -117,12 +111,9 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
 .content .visual img[alt="비쥬얼이미지-모바일"] {
   display: none;
 }
-/*2. 비쥬얼이미지*/
 .content .container > h2 {
   display: none;
 }
-/*3. 컨텐츠영역*/
-/*3-1제목영역*/
 .content .title {
   margin-top: 120px;
   text-align: center;
@@ -135,8 +126,6 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
   color: #01172c;
   font-weight: bold;
 }
-/*3-1제목영역*/
-/*3-2정보영역*/
 .content .pf-info {
   margin-top: 100px;
 }
@@ -160,7 +149,7 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
 .content .pf-info .pf-info-listbox .pf-info-list li {
   margin-bottom: 10px;
 }
-/* info-list 링크 */
+
 .content .pf-info .pf-info-listbox a {
   display: block;
   position: relative;
@@ -180,7 +169,6 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
   position: absolute;
   width: 14px;
   height: 4px;
-  /* 해당background배경색이랑 맞추기 */
   background: #fff;
   transition: 0.6s linear;
   transform: skewX(50deg);
@@ -193,15 +181,13 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
   bottom: -4px;
   right: 10%;
 }
-/* hover시 움직이는 정도 */
 .content .pf-info .pf-info-listbox a:hover:before {
   left: 70%;
 }
 .content .pf-info .pf-info-listbox a:hover:after {
   right: 70%;
 }
-/*3-2정보영역*/
-/*3-3기획영역*/
+
 .content .pf-planning {
   margin: 100px 10%;
   padding: 100px 0;
@@ -217,9 +203,7 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
 .content .pf-planning p {
   line-height: 1.5;
 }
-/*3-3기획영역*/
-/*3-4탭영역*/
-/*3-4-1탭메뉴*/
+
 .content .tab-menu {
   padding: 30px 0 50px;
   background: #b0bfe1;
@@ -242,15 +226,11 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
 .content .tab-menu input[type="radio"]:checked + label {
   color: #fff;
 }
-/*3-4-1탭메뉴*/
-/*3-4-2탭내용*/
 .content .tab-menu .tab {
   display: none;
   height: auto;
   margin-top: 30px;
 }
-/* 사이트맵 */
-/*탭버튼과 각각 탭내용 연결 | 형제선택자 사용(~) 클릭할때 블록형태로변경*/
 .content .tab-menu input[id="siteMap"]:checked ~ .sitemap-menu {
   display: block;
   text-align: center;
@@ -266,7 +246,7 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
   display: block;
   text-align: center;
 }
-/* 스타일가이드 */
+
 .content .tab-menu .stylegulde-menu {
   overflow-y: auto;
   overflow-x: hidden;
@@ -277,7 +257,7 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
   display: block;
   text-align: center;
 }
-/* 디자인 */
+
 .content .tab-menu .design-menu .design-tab {
   overflow-y: auto;
   overflow-x: hidden;
@@ -304,9 +284,7 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
 .content .tab-menu .design-menu .design-mini-slide li img {
   border: 1px solid #000;
 }
-/*3-4-2탭내용*/
-/*3-4탭영역*/
-/*3-5슬라이더영역*/
+
 .content .slide-menu {
   padding-top: 70px;
   background: #fff;
@@ -317,7 +295,7 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
   text-align: center;
   padding-bottom: 30px;
 }
-/*slick custom*/
+
 .content .slide-menu .other-slide {
   width: 100%;
   max-width: 1132px;
@@ -330,9 +308,7 @@ header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
 .content .slide-menu .other-slide .slick {
   margin: 0 0 0 10%;
 }
-/*3-5슬라이더영역*/
-/*3. 컨텐츠영역*/
-/*4. 푸터영역*/
+
 footer {
   padding: 20px 0;
   background: #ccc;
@@ -340,7 +316,7 @@ footer {
 footer p {
   text-align: center;
 }
-/*4. 푸터영역*/
+
 @media screen and (max-width: 1024px) {
   .content .title h2 {
     font-size: 3rem;
@@ -357,11 +333,10 @@ footer p {
   }
 }
 @media screen and (max-width: 768px) {
-  /*1.헤더영역*/
   header .btn_menu_toggle {
     z-index: 1000;
   }
-  /*햄버거메뉴 만들기*/
+
   header .btn_menu_toggle input[id="menuicon"] + label {
     display: block;
     width: 24px;
@@ -417,8 +392,7 @@ footer p {
   header .btn_menu_toggle input[id="menuicon"]:checked ~ .gnb .gnb-depth1 {
     display: block;
   }
-  /*햄버거메뉴 만들기*/
-  /*gnb수정*/
+
   header .btn_menu_toggle .gnb {
     position: fixed;
     left: 0;
@@ -426,7 +400,7 @@ footer p {
     height: auto;
     padding: 0;
   }
-  /* 로고 */
+
   header .btn_menu_toggle .gnb h1 {
     float: none;
     width: 175px;
@@ -466,12 +440,10 @@ footer p {
     color: #000;
   }
   header .btn_menu_toggle .gnb .gnb-depth2 > p:hover {
-    /*색상수정*/
     background-color: #01172c;
     color: #fff;
   }
-  /*1.헤더영역*/
-  /*2.비쥬얼이미지*/
+
   .content .visual {
     padding-top: 65px;
   }
@@ -481,8 +453,7 @@ footer p {
   .content .visual img[alt="비쥬얼이미지-모바일"] {
     display: block;
   }
-  /*2.비쥬얼이미지*/
-  /* 3. 컨텐츠영역 */
+
   .content .pf-info .pf-info-imgbox {
     float: none;
     width: 100%;
@@ -500,20 +471,19 @@ footer p {
   .content .pf-info .pf-info-listbox a {
     margin: 0 auto;
   }
-  /* 탭메뉴 */
+
   .content .tab-menu input[type="radio"] + label {
     font-size: 1.5rem;
   }
-  /* 사이트맵 */
+
   .content .tab-menu .sitemap-menu img {
     background: #fff;
     width: 100%;
   }
-  /* 스타일가이드 */
+
   .content .tab-menu .stylegulde-menu img {
     width: 100%;
   }
-  /* 3. 컨텐츠영역 */
 }
 @media screen and (max-width: 480px) {
   .content .title h2 {
@@ -523,7 +493,7 @@ footer p {
   .content .title p {
     font-size: 1.125rem;
   }
-  /* 탭메뉴 */
+
   .content .tab-menu input[type="radio"] + label {
     display: inline-block;
     font-family: "Poiret One", cursive, sans-serif;
@@ -532,7 +502,7 @@ footer p {
     color: #282828;
     cursor: pointer;
   }
-  /* 디자인 */
+
   .content .tab-menu .design-menu .design-tab {
     float: none;
     width: 90%;
@@ -555,7 +525,7 @@ footer p {
     width: 100%;
     border: 1px solid #000;
   }
-  /* 슬라이드 타이틀 */
+
   .content .slide-menu h2 {
     font-size: 2rem;
     font-weight: bold;
